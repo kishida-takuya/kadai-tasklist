@@ -1,7 +1,7 @@
 <header class="mb-4">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         {{-- トップページへのリンク --}}
-        <a class="navbar-brand" href="/">Microposts</a>
+        <a class="navbar-brand" href="/">Tasklist</a>
 
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
             <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,9 @@
                     </li>
                 @else
                     {{-- ユーザ登録ページへのリンク --}}
-                    <li>{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
+                    <li class="nav-item">{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
                     {{-- ログインページへのリンク --}}
-                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    <li class="nav-item">{!! link_to_route('login', 'Login', [], ['class' => 'nav-link']) !!}</li>
                 @endif
             </ul>
         </div>
